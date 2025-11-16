@@ -1,0 +1,65 @@
+#
+# Copyright 2021 Rockchip Limited
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+ROCKCHIP_READ_ONLY_FILE_SYSTEM_TYPE ?= ext4
+endif
+
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := $(ROCKCHIP_READ_ONLY_FILE_SYSTEM_TYPE)
+
+# Add standalone vendor partition configrations
+TARGET_COPY_OUT_VENDOR := vendor
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := $(ROCKCHIP_READ_ONLY_FILE_SYSTEM_TYPE)
+
+# Add standalone odm partition configrations
+TARGET_COPY_OUT_ODM := odm
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := $(ROCKCHIP_READ_ONLY_FILE_SYSTEM_TYPE)
+
+TARGET_USERIMAGES_USE_EXT4 ?= true
+TARGET_USERIMAGES_USE_F2FS ?= false
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE ?= ext4
+
+# use ext4 cache for OTA
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE ?= ext4
+# Add standalone metadata partition
+BOARD_USES_METADATA_PARTITION ?= true
+
+
+  ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+    BOARD_SUPER_PARTITION_SIZE ?=  3263168512
+    BOARD_ROCKCHIP_DYNAMIC_PARTITIONS_SIZE ?= $(shell expr $(BOARD_SUPER_PARTITION_SIZE) - 4194304)
+  else
+    BOARD_SYSTEMIMAGE_PARTITION_SIZE ?= 2726297600
+    BOARD_VENDORIMAGE_PARTITION_SIZE ?= 536870912
+    BOARD_ODMIMAGE_PARTITION_SIZE ?= 134217728
+  endif
+  BOARD_CACHEIMAGE_PARTITION_SIZE ?= 402653184
+  BOARD_RECOVERYIMAGE_PARTITION_SIZE ?= 100663296
+  BOARD_DTBOIMG_PARTITION_SIZE ?= 4194304
+  # Header V3, add vendor_boot
+  ifeq ($(BOARD_BUILD_GKI),true)
+    BOARD_BOOTIMAGE_PARTITION_SIZE ?= 67108864
+    BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE ?= 41943040
+    BOARD_RESOURCEIMAGE_PARTITION_SIZE ?= 16777216
+    ifeq ($(BOARD_ROCKCHIP_PKVM),true)
+      # Protected VM firmware, 1M
+      BOARD_PVMFWIMAGE_PARTITION_SIZE := 1048576
+    endif
+  else
+    BOARD_BOOTIMAGE_PARTITION_SIZE ?= 67108864
+  endif
+
+

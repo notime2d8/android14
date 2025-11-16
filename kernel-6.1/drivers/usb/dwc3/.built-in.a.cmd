@@ -1,1 +1,0 @@
-cmd_drivers/usb/dwc3/built-in.a := rm -f drivers/usb/dwc3/built-in.a;  printf "drivers/usb/dwc3/%s " core.o host.o gadget.o ep0.o drd.o debugfs.o dwc3-of-simple.o dwc3-rockchip-inno.o | xargs llvm-ar cDPrST drivers/usb/dwc3/built-in.a

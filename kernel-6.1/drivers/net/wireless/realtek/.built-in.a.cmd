@@ -1,1 +1,0 @@
-cmd_drivers/net/wireless/realtek/built-in.a := rm -f drivers/net/wireless/realtek/built-in.a;  printf "drivers/net/wireless/realtek/%s " rtw88/built-in.a | xargs llvm-ar cDPrST drivers/net/wireless/realtek/built-in.a

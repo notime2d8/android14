@@ -1,1 +1,0 @@
-cmd_drivers/input/touchscreen/elan/built-in.a := rm -f drivers/input/touchscreen/elan/built-in.a;  printf "drivers/input/touchscreen/elan/%s " elan_ts.o elan_update.o elan_tool.o | xargs llvm-ar cDPrST drivers/input/touchscreen/elan/built-in.a

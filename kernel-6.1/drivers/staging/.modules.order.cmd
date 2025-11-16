@@ -1,1 +1,0 @@
-cmd_drivers/staging/modules.order := {   cat drivers/staging/media/modules.order;   cat drivers/staging/iio/modules.order;   cat drivers/staging/android/modules.order; :; } > drivers/staging/modules.order

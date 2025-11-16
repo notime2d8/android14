@@ -1,1 +1,0 @@
-cmd_drivers/staging/media/deprecated/saa7146/common/built-in.a := rm -f drivers/staging/media/deprecated/saa7146/common/built-in.a;  llvm-ar cDPrST drivers/staging/media/deprecated/saa7146/common/built-in.a

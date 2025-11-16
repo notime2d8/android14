@@ -1,1 +1,0 @@
-cmd_drivers/headset_observe/built-in.a := rm -f drivers/headset_observe/built-in.a;  printf "drivers/headset_observe/%s " rockchip_headset_core.o rk_headset.o rk_headset_irq_hook_adc.o | xargs llvm-ar cDPrST drivers/headset_observe/built-in.a

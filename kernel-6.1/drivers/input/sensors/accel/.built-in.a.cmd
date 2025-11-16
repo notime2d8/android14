@@ -1,1 +1,0 @@
-cmd_drivers/input/sensors/accel/built-in.a := rm -f drivers/input/sensors/accel/built-in.a;  printf "drivers/input/sensors/accel/%s " kxtj9.o mma8452.o lis3dh.o mma7660.o mxc6655xa.o lsm303d.o mc3230.o mpu6880_acc.o sc7660.o sc7a20.o sc7a30.o mpu6500_acc.o lsm330_acc.o bma2xx.o da223_cust.o da223_core.o | xargs llvm-ar cDPrST drivers/input/sensors/accel/built-in.a

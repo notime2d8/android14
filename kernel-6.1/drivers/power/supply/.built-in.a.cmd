@@ -1,1 +1,0 @@
-cmd_drivers/power/supply/built-in.a := rm -f drivers/power/supply/built-in.a;  printf "drivers/power/supply/%s " power_supply_core.o power_supply_sysfs.o power_supply_leds.o power_supply_hwmon.o cw2017_battery.o sbs-battery.o gpio-charger.o bq24735-charger.o bq25700_charger.o rk817_battery.o rk817_charger.o | xargs llvm-ar cDPrST drivers/power/supply/built-in.a

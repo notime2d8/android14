@@ -1,1 +1,0 @@
-cmd_drivers/mmc/host/built-in.a := rm -f drivers/mmc/host/built-in.a;  printf "drivers/mmc/host/%s " sdhci.o dw_mmc.o dw_mmc-pltfm.o dw_mmc-rockchip.o sdhci-pltfm.o sdhci-of-arasan.o sdhci-of-dwcmshc.o cqhci-core.o mmc_hsq.o | xargs llvm-ar cDPrST drivers/mmc/host/built-in.a

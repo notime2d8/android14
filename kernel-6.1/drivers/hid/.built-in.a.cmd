@@ -1,1 +1,0 @@
-cmd_drivers/hid/built-in.a := rm -f drivers/hid/built-in.a;  printf "drivers/hid/%s " hid-core.o hid-input.o hid-quirks.o hid-debug.o hidraw.o uhid.o hid-generic.o hid-multitouch.o hid-nintendo.o hid-sony.o usbhid/built-in.a | xargs llvm-ar cDPrST drivers/hid/built-in.a

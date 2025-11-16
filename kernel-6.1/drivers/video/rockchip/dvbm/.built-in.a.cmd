@@ -1,1 +1,0 @@
-cmd_drivers/video/rockchip/dvbm/built-in.a := rm -f drivers/video/rockchip/dvbm/built-in.a;  printf "drivers/video/rockchip/dvbm/%s " rockchip_dvbm.o | xargs llvm-ar cDPrST drivers/video/rockchip/dvbm/built-in.a

@@ -1,1 +1,0 @@
-cmd_drivers/usb/serial/built-in.a := rm -f drivers/usb/serial/built-in.a;  printf "drivers/usb/serial/%s " usb-serial.o generic.o bus.o cp210x.o ftdi_sio.o option.o usb_wwan.o | xargs llvm-ar cDPrST drivers/usb/serial/built-in.a

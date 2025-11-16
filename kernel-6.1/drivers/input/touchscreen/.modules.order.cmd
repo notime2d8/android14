@@ -1,1 +1,0 @@
-cmd_drivers/input/touchscreen/modules.order := {   cat drivers/input/touchscreen/elan/modules.order;   cat drivers/input/touchscreen/gt9xx/modules.order;   cat drivers/input/touchscreen/gtx8/modules.order; :; } > drivers/input/touchscreen/modules.order

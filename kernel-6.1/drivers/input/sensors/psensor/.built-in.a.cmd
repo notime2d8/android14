@@ -1,1 +1,0 @@
-cmd_drivers/input/sensors/psensor/built-in.a := rm -f drivers/input/sensors/psensor/built-in.a;  printf "drivers/input/sensors/psensor/%s " ps_stk3410.o ps_ucs14620.o | xargs llvm-ar cDPrST drivers/input/sensors/psensor/built-in.a

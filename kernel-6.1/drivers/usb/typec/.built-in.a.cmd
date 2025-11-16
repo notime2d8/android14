@@ -1,1 +1,0 @@
-cmd_drivers/usb/typec/built-in.a := rm -f drivers/usb/typec/built-in.a;  printf "drivers/usb/typec/%s " class.o mux.o bus.o pd.o retimer.o altmodes/built-in.a tcpm/built-in.a mux/built-in.a | xargs llvm-ar cDPrST drivers/usb/typec/built-in.a

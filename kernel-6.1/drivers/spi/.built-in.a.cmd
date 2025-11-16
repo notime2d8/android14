@@ -1,1 +1,0 @@
-cmd_drivers/spi/built-in.a := rm -f drivers/spi/built-in.a;  printf "drivers/spi/%s " spi.o spi-mem.o spidev.o spi-bitbang.o spi-rockchip.o spi-rockchip-sfc.o spi-rockchip-slave.o | xargs llvm-ar cDPrST drivers/spi/built-in.a

@@ -1,1 +1,0 @@
-cmd_drivers/input/keyboard/built-in.a := rm -f drivers/input/keyboard/built-in.a;  printf "drivers/input/keyboard/%s " adc-keys.o gpio_keys.o gpio_keys_polled.o | xargs llvm-ar cDPrST drivers/input/keyboard/built-in.a

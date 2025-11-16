@@ -1,1 +1,0 @@
-cmd_drivers/iio/buffer/built-in.a := rm -f drivers/iio/buffer/built-in.a;  printf "drivers/iio/buffer/%s " industrialio-triggered-buffer.o kfifo_buf.o | xargs llvm-ar cDPrST drivers/iio/buffer/built-in.a

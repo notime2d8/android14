@@ -1,1 +1,0 @@
-cmd_drivers/crypto/rockchip/cryptodev_linux/built-in.a := rm -f drivers/crypto/rockchip/cryptodev_linux/built-in.a;  printf "drivers/crypto/rockchip/cryptodev_linux/%s " ioctl.o main.o cryptlib.o authenc.o zc.o util.o rk_cryptodev.o | xargs llvm-ar cDPrST drivers/crypto/rockchip/cryptodev_linux/built-in.a

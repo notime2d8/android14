@@ -1,1 +1,0 @@
-cmd_drivers/net/wireless/built-in.a := rm -f drivers/net/wireless/built-in.a;  printf "drivers/net/wireless/%s " purelifi/built-in.a silabs/built-in.a rockchip_wlan/built-in.a | xargs llvm-ar cDPrST drivers/net/wireless/built-in.a

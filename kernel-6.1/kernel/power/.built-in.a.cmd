@@ -1,1 +1,0 @@
-cmd_kernel/power/built-in.a := rm -f kernel/power/built-in.a;  printf "kernel/power/%s " qos.o main.o console.o process.o suspend.o wakelock.o poweroff.o wakeup_reason.o energy_model.o | xargs llvm-ar cDPrST kernel/power/built-in.a

@@ -1,1 +1,0 @@
-cmd_drivers/base/firmware_loader/builtin/built-in.a := rm -f drivers/base/firmware_loader/builtin/built-in.a;  printf "drivers/base/firmware_loader/builtin/%s " main.o rtl8723fu_fw.bin.gen.o rtl8723fu_config.bin.gen.o | xargs llvm-ar cDPrST drivers/base/firmware_loader/builtin/built-in.a

@@ -1,1 +1,0 @@
-cmd_drivers/video/rockchip/rga3/built-in.a := rm -f drivers/video/rockchip/rga3/built-in.a;  printf "drivers/video/rockchip/rga3/%s " rga_drv.o rga_common.o rga3_reg_info.o rga_iommu.o rga_dma_buf.o rga_job.o rga_hw_config.o rga2_reg_info.o rga_policy.o rga_mm.o rga_fence.o rga_debugger.o | xargs llvm-ar cDPrST drivers/video/rockchip/rga3/built-in.a

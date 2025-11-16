@@ -1,1 +1,0 @@
-cmd_drivers/input/built-in.a := rm -f drivers/input/built-in.a;  printf "drivers/input/%s " input.o input-compat.o input-mt.o input-poller.o ff-core.o touchscreen.o ff-memless.o input-polldev.o input-leds.o joydev.o evdev.o keyboard/built-in.a joystick/built-in.a remotectl/built-in.a sensors/built-in.a misc/built-in.a | xargs llvm-ar cDPrST drivers/input/built-in.a

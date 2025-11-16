@@ -1,1 +1,0 @@
-cmd_drivers/input/joystick/built-in.a := rm -f drivers/input/joystick/built-in.a;  printf "drivers/input/joystick/%s " xpad.o rocknix-singleadc-joypad.o odroid-gou-joypad.o | xargs llvm-ar cDPrST drivers/input/joystick/built-in.a

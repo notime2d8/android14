@@ -1,1 +1,0 @@
-cmd_drivers/staging/media/built-in.a := rm -f drivers/staging/media/built-in.a;  printf "drivers/staging/media/%s " deprecated/vpfe_capture/built-in.a deprecated/saa7146/built-in.a | xargs llvm-ar cDPrST drivers/staging/media/built-in.a

@@ -1,1 +1,0 @@
-cmd_drivers/rknpu/built-in.a := rm -f drivers/rknpu/built-in.a;  printf "drivers/rknpu/%s " rknpu_drv.o rknpu_reset.o rknpu_job.o rknpu_debugger.o rknpu_iommu.o rknpu_devfreq.o rknpu_gem.o | xargs llvm-ar cDPrST drivers/rknpu/built-in.a

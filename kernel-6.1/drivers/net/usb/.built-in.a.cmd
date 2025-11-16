@@ -1,1 +1,0 @@
-cmd_drivers/net/usb/built-in.a := rm -f drivers/net/usb/built-in.a;  printf "drivers/net/usb/%s " rtl8150.o r8152.o asix_devices.o asix_common.o ax88172a.o ax88179_178a.o cdc_ether.o rndis_host.o usbnet.o cdc_ncm.o qmi_wwan.o cdc_mbim.o r8153_ecm.o | xargs llvm-ar cDPrST drivers/net/usb/built-in.a

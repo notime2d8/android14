@@ -1,1 +1,0 @@
-cmd_drivers/net/wireless/modules.order := {   cat drivers/net/wireless/purelifi/modules.order;   cat drivers/net/wireless/silabs/modules.order;   cat drivers/net/wireless/rockchip_wlan/modules.order; :; } > drivers/net/wireless/modules.order

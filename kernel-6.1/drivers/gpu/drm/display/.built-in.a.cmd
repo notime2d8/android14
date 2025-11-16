@@ -1,1 +1,0 @@
-cmd_drivers/gpu/drm/display/built-in.a := rm -f drivers/gpu/drm/display/built-in.a;  printf "drivers/gpu/drm/display/%s " drm_display_helper_mod.o drm_hdcp_helper.o drm_hdmi_helper.o drm_scdc_helper.o | xargs llvm-ar cDPrST drivers/gpu/drm/display/built-in.a

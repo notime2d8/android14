@@ -1,1 +1,0 @@
-cmd_drivers/input/sensors/built-in.a := rm -f drivers/input/sensors/built-in.a;  printf "drivers/input/sensors/%s " hall/built-in.a sensor-i2c.o sensor-dev.o | xargs llvm-ar cDPrST drivers/input/sensors/built-in.a

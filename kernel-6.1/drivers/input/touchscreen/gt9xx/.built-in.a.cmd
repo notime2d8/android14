@@ -1,1 +1,0 @@
-cmd_drivers/input/touchscreen/gt9xx/built-in.a := rm -f drivers/input/touchscreen/gt9xx/built-in.a;  printf "drivers/input/touchscreen/gt9xx/%s " gt9xx.o gt9xx_update.o | xargs llvm-ar cDPrST drivers/input/touchscreen/gt9xx/built-in.a

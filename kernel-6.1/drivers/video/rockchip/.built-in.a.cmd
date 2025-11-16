@@ -1,1 +1,0 @@
-cmd_drivers/video/rockchip/built-in.a := rm -f drivers/video/rockchip/built-in.a;  printf "drivers/video/rockchip/%s " rga3/built-in.a rve/built-in.a iep/built-in.a mpp/built-in.a dvbm/built-in.a | xargs llvm-ar cDPrST drivers/video/rockchip/built-in.a

@@ -1,1 +1,0 @@
-cmd_drivers/rtc/built-in.a := rm -f drivers/rtc/built-in.a;  printf "drivers/rtc/%s " lib.o class.o interface.o nvmem.o dev.o proc.o sysfs.o rtc-hym8563.o rtc-rk808.o | xargs llvm-ar cDPrST drivers/rtc/built-in.a

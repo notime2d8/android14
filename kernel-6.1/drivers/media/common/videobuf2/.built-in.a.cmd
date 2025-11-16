@@ -1,1 +1,0 @@
-cmd_drivers/media/common/videobuf2/built-in.a := rm -f drivers/media/common/videobuf2/built-in.a;  printf "drivers/media/common/videobuf2/%s " videobuf2-core.o frame_vector.o videobuf2-cma-sg.o videobuf2-dma-contig.o videobuf2-dma-sg.o videobuf2-memops.o videobuf2-v4l2.o videobuf2-vmalloc.o | xargs llvm-ar cDPrST drivers/media/common/videobuf2/built-in.a

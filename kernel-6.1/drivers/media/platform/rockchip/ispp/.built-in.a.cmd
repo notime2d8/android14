@@ -1,1 +1,0 @@
-cmd_drivers/media/platform/rockchip/ispp/built-in.a := rm -f drivers/media/platform/rockchip/ispp/built-in.a;  printf "drivers/media/platform/rockchip/ispp/%s " hw.o dev.o common.o ispp.o stream.o params.o stats.o procfs.o | xargs llvm-ar cDPrST drivers/media/platform/rockchip/ispp/built-in.a

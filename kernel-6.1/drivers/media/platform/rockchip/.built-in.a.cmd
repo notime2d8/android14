@@ -1,1 +1,0 @@
-cmd_drivers/media/platform/rockchip/built-in.a := rm -f drivers/media/platform/rockchip/built-in.a;  printf "drivers/media/platform/rockchip/%s " cif/built-in.a flexbus_cif/built-in.a isp1/built-in.a isp/built-in.a ispp/built-in.a hdmirx/built-in.a rga/built-in.a rkisp1/built-in.a vpss/built-in.a | xargs llvm-ar cDPrST drivers/media/platform/rockchip/built-in.a

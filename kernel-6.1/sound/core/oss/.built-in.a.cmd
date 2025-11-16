@@ -1,1 +1,0 @@
-cmd_sound/core/oss/built-in.a := rm -f sound/core/oss/built-in.a;  printf "sound/core/oss/%s " mixer_oss.o pcm_oss.o pcm_plugin.o io.o copy.o linear.o mulaw.o route.o rate.o | xargs llvm-ar cDPrST sound/core/oss/built-in.a

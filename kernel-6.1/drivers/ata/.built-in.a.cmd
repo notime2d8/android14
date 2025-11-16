@@ -1,1 +1,0 @@
-cmd_drivers/ata/built-in.a := rm -f drivers/ata/built-in.a;  printf "drivers/ata/%s " libata-core.o libata-scsi.o libata-eh.o libata-transport.o libata-trace.o libata-sata.o libata-pmp.o ahci_platform.o libahci.o libahci_platform.o | xargs llvm-ar cDPrST drivers/ata/built-in.a

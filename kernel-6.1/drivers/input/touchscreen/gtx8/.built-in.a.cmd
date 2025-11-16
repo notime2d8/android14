@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/gtx8/built-in.a := rm -f drivers/input/touchscreen/gtx8/built-in.a;  printf "drivers/input/touchscreen/gtx8/%s " goodix_ts_i2c.o goodix_ts_core.o goodix_cfg_bin.o goodix_gtx8_update.o goodix_ts_tools.o | xargs llvm-ar cDPrST drivers/input/touchscreen/gtx8/built-in.a

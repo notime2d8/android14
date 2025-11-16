@@ -1,0 +1,1 @@
+cmd_drivers/input/sensors/lsensor/built-in.a := rm -f drivers/input/sensors/lsensor/built-in.a;  printf "drivers/input/sensors/lsensor/%s " cm3217.o cm3218.o ls_ucs14620.o ls_stk3410.o | xargs llvm-ar cDPrST drivers/input/sensors/lsensor/built-in.a

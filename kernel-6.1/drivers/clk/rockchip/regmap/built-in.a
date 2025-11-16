@@ -1,0 +1,17 @@
+!<thin>
+//                                              148       `
+clk-regmap-mux.o/
+clk-regmap-divider.o/
+clk-regmap-gate.o/
+clk-regmap-fractional-divider.o/
+clk-regmap-composite.o/
+clk-regmap-pll.o/
+clk-rk618.o/
+
+/0              0           0     0     644     4280      `
+/18             0           0     0     644     4440      `
+/40             0           0     0     644     4056      `
+/59             0           0     0     644     5080      `
+/92             0           0     0     644     7456      `
+/116            0           0     0     644     6408      `
+/134            0           0     0     644     12592     `

@@ -1,0 +1,1 @@
+cmd_sound/soc/rockchip/built-in.a := rm -f sound/soc/rockchip/built-in.a;  printf "sound/soc/rockchip/%s " rockchip_utils.o rockchip_i2s.o rockchip_i2s_tdm.o rockchip_pdm.o rockchip_sai.o rockchip_spdif.o rockchip_spdifrx.o rockchip_trcm.o rockchip_hdmi.o rockchip_max98090.o rockchip_multicodecs.o rockchip_rt5645.o | xargs llvm-ar cDPrST sound/soc/rockchip/built-in.a

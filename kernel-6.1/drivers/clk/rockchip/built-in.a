@@ -1,0 +1,29 @@
+!<thin>
+//                                              186       `
+clk.o/
+clk-pll.o/
+clk-cpu.o/
+clk-half-divider.o/
+clk-mmc-phase.o/
+clk-muxgrf.o/
+clk-fractional-divider-v2.o/
+clk-inverter.o/
+clk-pvtm.o/
+softrst.o/
+clk-link.o/
+clk-out.o/
+clk-rk3568.o/
+
+/0              0           0     0     644     19256     `
+/7              0           0     0     644     15424     `
+/18             0           0     0     644     9512      `
+/29             0           0     0     644     4464      `
+/49             0           0     0     644     4496      `
+/66             0           0     0     644     3208      `
+/80             0           0     0     644     6536      `
+/109            0           0     0     644     3528      `
+/125            0           0     0     644     9536      `
+/137            0           0     0     644     4208      `
+/148            0           0     0     644     10192     `
+/160            0           0     0     644     6288      `
+/171            0           0     0     644     127056    `

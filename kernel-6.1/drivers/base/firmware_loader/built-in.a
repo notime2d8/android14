@@ -1,0 +1,17 @@
+!<thin>
+//                                              132       `
+fallback_table.o/
+main.o/
+fallback.o/
+sysfs.o/
+builtin/main.o/
+builtin/rtl8723fu_fw.bin.gen.o/
+builtin/rtl8723fu_config.bin.gen.o/
+
+/0              0           0     0     644     5128      `
+/18             0           0     0     644     24896     `
+/26             0           0     0     644     5856      `
+/38             0           0     0     644     9296      `
+/47             0           0     0     644     3032      `
+/63             0           0     0     644     50944     `
+/95             0           0     0     644     1048      `

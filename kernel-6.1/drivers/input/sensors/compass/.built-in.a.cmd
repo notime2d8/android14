@@ -1,0 +1,1 @@
+cmd_drivers/input/sensors/compass/built-in.a := rm -f drivers/input/sensors/compass/built-in.a;  printf "drivers/input/sensors/compass/%s " ak8975.o ak8963.o | xargs llvm-ar cDPrST drivers/input/sensors/compass/built-in.a

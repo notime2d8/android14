@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/rockchip/hdmirx/built-in.a := rm -f drivers/media/platform/rockchip/hdmirx/built-in.a;  printf "drivers/media/platform/rockchip/hdmirx/%s " rk_hdmirx_class.o rk_hdmirx.o rk_hdmirx_cec.o rk_hdmirx_hdcp.o | xargs llvm-ar cDPrST drivers/media/platform/rockchip/hdmirx/built-in.a

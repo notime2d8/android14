@@ -1,0 +1,1 @@
+cmd_drivers/input/sensors/gyro/built-in.a := rm -f drivers/input/sensors/gyro/built-in.a;  printf "drivers/input/sensors/gyro/%s " l3g4200d.o l3g20d.o ewtsa.o mpu6500_gyro.o mpu6880_gyro.o lsm330_gyro.o | xargs llvm-ar cDPrST drivers/input/sensors/gyro/built-in.a

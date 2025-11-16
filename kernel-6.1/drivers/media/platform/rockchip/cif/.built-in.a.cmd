@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/rockchip/cif/built-in.a := rm -f drivers/media/platform/rockchip/cif/built-in.a;  printf "drivers/media/platform/rockchip/cif/%s " dev.o capture.o mipi-csi2.o cif-luma.o hw.o subdev-itf.o procfs.o cif-scale.o common.o cif-tools.o cif-rockit.o | xargs llvm-ar cDPrST drivers/media/platform/rockchip/cif/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/mtd/nand/spi/built-in.a := rm -f drivers/mtd/nand/spi/built-in.a;  printf "drivers/mtd/nand/spi/%s " core.o ato.o biwin.o dosilicon.o esmt.o etron.o fmsh.o foresee.o gigadevice.o gsto.o hiksemi.o hyf.o jsc.o macronix.o micron.o paragon.o silicongo.o skyhigh.o toshiba.o unim.o winbond.o xincun.o xtx.o zbit.o | xargs llvm-ar cDPrST drivers/mtd/nand/spi/built-in.a

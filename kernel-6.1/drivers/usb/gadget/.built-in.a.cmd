@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/built-in.a := rm -f drivers/usb/gadget/built-in.a;  printf "drivers/usb/gadget/%s " usbstring.o config.o epautoconf.o composite.o functions.o configfs.o u_f.o udc/built-in.a function/built-in.a legacy/built-in.a | xargs llvm-ar cDPrST drivers/usb/gadget/built-in.a

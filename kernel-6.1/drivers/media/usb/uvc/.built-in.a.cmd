@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/uvc/built-in.a := rm -f drivers/media/usb/uvc/built-in.a;  printf "drivers/media/usb/uvc/%s " uvc_driver.o uvc_queue.o uvc_v4l2.o uvc_video.o uvc_ctrl.o uvc_status.o uvc_isight.o uvc_debugfs.o uvc_metadata.o uvc_entity.o | xargs llvm-ar cDPrST drivers/media/usb/uvc/built-in.a

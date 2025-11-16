@@ -1,0 +1,1 @@
+cmd_drivers/dma-buf/heaps/built-in.a := rm -f drivers/dma-buf/heaps/built-in.a;  printf "drivers/dma-buf/heaps/%s " deferred-free-helper.o page_pool.o rk_system_heap.o rk_cma_heap.o | xargs llvm-ar cDPrST drivers/dma-buf/heaps/built-in.a

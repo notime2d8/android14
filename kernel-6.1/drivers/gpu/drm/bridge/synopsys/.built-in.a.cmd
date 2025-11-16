@@ -1,0 +1,1 @@
+cmd_drivers/gpu/drm/bridge/synopsys/built-in.a := rm -f drivers/gpu/drm/bridge/synopsys/built-in.a;  printf "drivers/gpu/drm/bridge/synopsys/%s " dw-hdmi.o dw-hdmi-hdcp.o dw-hdmi-qp.o dw-hdmi-qp-hdcp.o dw-hdmi-i2s-audio.o dw-hdmi-qp-i2s-audio.o dw-hdmi-cec.o dw-hdmi-qp-cec.o dw-mipi-dsi.o | xargs llvm-ar cDPrST drivers/gpu/drm/bridge/synopsys/built-in.a

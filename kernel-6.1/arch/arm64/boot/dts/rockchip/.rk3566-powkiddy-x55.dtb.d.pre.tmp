@@ -1,0 +1,26 @@
+arch/arm64/boot/dts/rockchip/.rk3566-powkiddy-x55.dtb.dts.tmp: \
+  arch/arm64/boot/dts/rockchip/rk3566-powkiddy-x55.dts \
+  scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+  scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h \
+  scripts/dtc/include-prefixes/dt-bindings/input/rk-input.h \
+  scripts/dtc/include-prefixes/dt-bindings/leds/common.h \
+  scripts/dtc/include-prefixes/dt-bindings/sensor-dev.h \
+  scripts/dtc/include-prefixes/dt-bindings/display/drm_mipi_dsi.h \
+  scripts/dtc/include-prefixes/dt-bindings/display/rockchip_vop.h \
+  arch/arm64/boot/dts/rockchip/rk3566.dtsi \
+  arch/arm64/boot/dts/rockchip/rk356x.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/clock/rk3568-cru.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h \
+  scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+  scripts/dtc/include-prefixes/dt-bindings/phy/phy.h \
+  scripts/dtc/include-prefixes/dt-bindings/power/rk3568-power.h \
+  scripts/dtc/include-prefixes/dt-bindings/soc/rockchip,boot-mode.h \
+  scripts/dtc/include-prefixes/dt-bindings/soc/rockchip-system-status.h \
+  scripts/dtc/include-prefixes/dt-bindings/suspend/rockchip-rk3568.h \
+  scripts/dtc/include-prefixes/dt-bindings/thermal/thermal.h \
+  arch/arm64/boot/dts/rockchip/rk3568-dram-default-timing.dtsi \
+  scripts/dtc/include-prefixes/dt-bindings/clock/rockchip-ddr.h \
+  scripts/dtc/include-prefixes/dt-bindings/memory/rk3568-dram.h \
+  scripts/dtc/include-prefixes/dt-bindings/memory/rockchip-dram.h \
+  arch/arm64/boot/dts/rockchip/rk3568-pinctrl.dtsi \
+  arch/arm64/boot/dts/rockchip/rockchip-pinconf.dtsi

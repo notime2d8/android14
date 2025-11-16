@@ -1,0 +1,1 @@
+cmd_drivers/input/touchscreen/built-in.a := rm -f drivers/input/touchscreen/built-in.a;  printf "drivers/input/touchscreen/%s " edt-ft5x06.o elan/built-in.a gsl3673.o gsl_point_id.o gsl3673_800x1280.o gslx680_pad.o gt9xx/built-in.a gtx8/built-in.a ili210x.o | xargs llvm-ar cDPrST drivers/input/touchscreen/built-in.a

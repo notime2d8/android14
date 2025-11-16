@@ -1,0 +1,1 @@
+cmd_drivers/gpu/drm/rockchip/rk618/built-in.a := rm -f drivers/gpu/drm/rockchip/rk618/built-in.a;  printf "drivers/gpu/drm/rockchip/rk618/%s " rk618_scaler.o rk618_vif.o rk618_dither.o rk618_lvds.o rk618_rgb.o rk618_hdmi.o rk618_dsi.o | xargs llvm-ar cDPrST drivers/gpu/drm/rockchip/rk618/built-in.a

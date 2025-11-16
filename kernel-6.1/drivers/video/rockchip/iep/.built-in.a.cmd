@@ -1,0 +1,1 @@
+cmd_drivers/video/rockchip/iep/built-in.a := rm -f drivers/video/rockchip/iep/built-in.a;  printf "drivers/video/rockchip/iep/%s " hw_iep_reg.o iep_drv.o iep_iommu_ops.o iep_iommu_drm.o | xargs llvm-ar cDPrST drivers/video/rockchip/iep/built-in.a

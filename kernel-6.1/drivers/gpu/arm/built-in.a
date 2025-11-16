@@ -1,0 +1,223 @@
+!<thin>
+//                                              4320      `
+bifrost/mali_kbase_cache_policy.o/
+bifrost/mali_kbase_ccswe.o/
+bifrost/mali_kbase_mem.o/
+bifrost/mali_kbase_reg_track.o/
+bifrost/mali_kbase_mem_migrate.o/
+bifrost/mali_kbase_mem_pool_group.o/
+bifrost/mali_kbase_native_mgm.o/
+bifrost/mali_kbase_ctx_sched.o/
+bifrost/mali_kbase_gpuprops.o/
+bifrost/mali_kbase_pm.o/
+bifrost/mali_kbase_config.o/
+bifrost/mali_kbase_kinstr_prfcnt.o/
+bifrost/mali_kbase_softjobs.o/
+bifrost/mali_kbase_hw.o/
+bifrost/mali_kbase_debug.o/
+bifrost/mali_kbase_gpu_memory_debugfs.o/
+bifrost/mali_kbase_mem_linux.o/
+bifrost/mali_kbase_core_linux.o/
+bifrost/mali_kbase_mem_profile_debugfs.o/
+bifrost/mali_kbase_disjoint_events.o/
+bifrost/mali_kbase_debug_mem_view.o/
+bifrost/mali_kbase_debug_mem_zones.o/
+bifrost/mali_kbase_debug_mem_allocs.o/
+bifrost/mali_kbase_smc.o/
+bifrost/mali_kbase_mem_pool.o/
+bifrost/mali_kbase_mem_pool_debugfs.o/
+bifrost/mali_kbase_debugfs_helper.o/
+bifrost/mali_kbase_as_fault_debugfs.o/
+bifrost/mali_kbase_regs_history_debugfs.o/
+bifrost/mali_kbase_dvfs_debugfs.o/
+bifrost/mali_power_gpu_frequency_trace.o/
+bifrost/mali_kbase_trace_gpu_mem.o/
+bifrost/mali_kbase_pbha.o/
+bifrost/mali_kbase_pbha_debugfs.o/
+bifrost/mali_kbase_fence_ops.o/
+bifrost/mali_kbase_sync_file.o/
+bifrost/mali_kbase_sync_common.o/
+bifrost/mali_power_gpu_work_period_trace.o/
+bifrost/mali_kbase_gpu_metrics.o/
+bifrost/mali_kbase_jm.o/
+bifrost/mali_kbase_dummy_job_wa.o/
+bifrost/mali_kbase_debug_job_fault.o/
+bifrost/mali_kbase_event.o/
+bifrost/mali_kbase_jd.o/
+bifrost/mali_kbase_jd_debugfs.o/
+bifrost/mali_kbase_js.o/
+bifrost/mali_kbase_js_ctx_attr.o/
+bifrost/mali_kbase_kinstr_jm.o/
+bifrost/mali_kbase_fence.o/
+bifrost/arbiter/mali_kbase_arbif.o/
+bifrost/arbiter/mali_kbase_arbiter_pm.o/
+bifrost/context/mali_kbase_context.o/
+bifrost/context/backend/mali_kbase_context_jm.o/
+bifrost/debug/mali_kbase_debug_ktrace.o/
+bifrost/debug/backend/mali_kbase_debug_ktrace_jm.o/
+bifrost/device/mali_kbase_device.o/
+bifrost/device/mali_kbase_device_hw.o/
+bifrost/device/backend/mali_kbase_device_jm.o/
+bifrost/device/backend/mali_kbase_device_hw_jm.o/
+bifrost/backend/gpu/mali_kbase_cache_policy_backend.o/
+bifrost/backend/gpu/mali_kbase_gpuprops_backend.o/
+bifrost/backend/gpu/mali_kbase_irq_linux.o/
+bifrost/backend/gpu/mali_kbase_pm_backend.o/
+bifrost/backend/gpu/mali_kbase_pm_driver.o/
+bifrost/backend/gpu/mali_kbase_pm_metrics.o/
+bifrost/backend/gpu/mali_kbase_pm_ca.o/
+bifrost/backend/gpu/mali_kbase_pm_always_on.o/
+bifrost/backend/gpu/mali_kbase_pm_coarse_demand.o/
+bifrost/backend/gpu/mali_kbase_pm_policy.o/
+bifrost/backend/gpu/mali_kbase_time.o/
+bifrost/backend/gpu/mali_kbase_l2_mmu_config.o/
+bifrost/backend/gpu/mali_kbase_clk_rate_trace_mgr.o/
+bifrost/backend/gpu/mali_kbase_instr_backend.o/
+bifrost/backend/gpu/mali_kbase_jm_as.o/
+bifrost/backend/gpu/mali_kbase_debug_job_fault_backend.o/
+bifrost/backend/gpu/mali_kbase_jm_hw.o/
+bifrost/backend/gpu/mali_kbase_jm_rb.o/
+bifrost/backend/gpu/mali_kbase_js_backend.o/
+bifrost/backend/gpu/mali_kbase_devfreq.o/
+bifrost/mmu/mali_kbase_mmu.o/
+bifrost/mmu/mali_kbase_mmu_hw_direct.o/
+bifrost/mmu/mali_kbase_mmu_faults_decoder_luts.o/
+bifrost/mmu/mali_kbase_mmu_faults_decoder.o/
+bifrost/mmu/mali_kbase_mmu_mode_aarch64.o/
+bifrost/mmu/backend/mali_kbase_mmu_jm.o/
+bifrost/mmu/backend/mali_kbase_mmu_faults_decoder_luts_jm.o/
+bifrost/tl/mali_kbase_timeline.o/
+bifrost/tl/mali_kbase_timeline_io.o/
+bifrost/tl/mali_kbase_tlstream.o/
+bifrost/tl/mali_kbase_tracepoints.o/
+bifrost/tl/backend/mali_kbase_timeline_jm.o/
+bifrost/hwcnt/mali_kbase_hwcnt.o/
+bifrost/hwcnt/mali_kbase_hwcnt_gpu.o/
+bifrost/hwcnt/mali_kbase_hwcnt_types.o/
+bifrost/hwcnt/mali_kbase_hwcnt_virtualizer.o/
+bifrost/hwcnt/mali_kbase_hwcnt_watchdog_if_timer.o/
+bifrost/hwcnt/backend/mali_kbase_hwcnt_backend_jm.o/
+bifrost/hwcnt/backend/mali_kbase_hwcnt_backend_jm_watchdog.o/
+bifrost/gpu/mali_kbase_gpu.o/
+bifrost/gpu/backend/mali_kbase_gpu_fault_jm.o/
+bifrost/hw_access/mali_kbase_hw_access.o/
+bifrost/hw_access/regmap/mali_kbase_regmap_jm.o/
+bifrost/hw_access/backend/mali_kbase_hw_access_real_hw.o/
+bifrost/thirdparty/mali_kbase_mmap.o/
+bifrost/platform/rk/mali_kbase_config_rk.o/
+bifrost/ipa/mali_kbase_ipa_simple.o/
+bifrost/ipa/mali_kbase_ipa.o/
+bifrost/ipa/mali_kbase_ipa_debugfs.o/
+bifrost/ipa/backend/mali_kbase_ipa_counter_jm.o/
+bifrost/ipa/backend/mali_kbase_ipa_counter_common_jm.o/
+
+/0              0           0     0     644     2848      `
+/35             0           0     0     644     2256      `
+/63             0           0     0     644     88528     `
+/89             0           0     0     644     31128     `
+/121            0           0     0     644     3360      `
+/155            0           0     0     644     3976      `
+/192            0           0     0     644     3488      `
+/225            0           0     0     644     12912     `
+/257            0           0     0     644     15792     `
+/288            0           0     0     644     8096      `
+/313            0           0     0     644     2168      `
+/342            0           0     0     644     41016     `
+/378            0           0     0     644     32608     `
+/409            0           0     0     644     16784     `
+/434            0           0     0     644     2496      `
+/462            0           0     0     644     3912      `
+/503            0           0     0     644     62936     `
+/535            0           0     0     644     222928    `
+/568            0           0     0     644     3608      `
+/610            0           0     0     644     3360      `
+/648            0           0     0     644     10080     `
+/685            0           0     0     644     3784      `
+/723            0           0     0     644     5168      `
+/762            0           0     0     644     1104      `
+/788            0           0     0     644     19704     `
+/819            0           0     0     644     7472      `
+/858            0           0     0     644     8336      `
+/895            0           0     0     644     960       `
+/934            0           0     0     644     6152      `
+/977            0           0     0     644     3272      `
+/1012           0           0     0     644     880       `
+/1054           0           0     0     644     4616      `
+/1090           0           0     0     644     1720      `
+/1117           0           0     0     644     8728      `
+/1152           0           0     0     644     3104      `
+/1184           0           0     0     644     10176     `
+/1216           0           0     0     644     1512      `
+/1250           0           0     0     644     880       `
+/1294           0           0     0     644     5928      `
+/1328           0           0     0     644     2672      `
+/1353           0           0     0     644     8280      `
+/1388           0           0     0     644     12768     `
+/1426           0           0     0     644     9064      `
+/1454           0           0     0     644     33088     `
+/1479           0           0     0     644     5048      `
+/1512           0           0     0     644     53728     `
+/1537           0           0     0     644     1744      `
+/1571           0           0     0     644     15416     `
+/1603           0           0     0     644     2464      `
+/1631           0           0     0     644     7632      `
+/1667           0           0     0     644     19416     `
+/1708           0           0     0     644     14464     `
+/1746           0           0     0     644     14200     `
+/1795           0           0     0     644     1104      `
+/1836           0           0     0     644     872       `
+/1888           0           0     0     644     17968     `
+/1924           0           0     0     644     5600      `
+/1963           0           0     0     644     13104     `
+/2010           0           0     0     644     3360      `
+/2060           0           0     0     644     1200      `
+/2115           0           0     0     644     5000      `
+/2166           0           0     0     644     6520      `
+/2210           0           0     0     644     16848     `
+/2255           0           0     0     644     50328     `
+/2299           0           0     0     644     5608      `
+/2344           0           0     0     644     4536      `
+/2384           0           0     0     644     2592      `
+/2431           0           0     0     644     2656      `
+/2482           0           0     0     644     7440      `
+/2526           0           0     0     644     7056      `
+/2565           0           0     0     644     2336      `
+/2613           0           0     0     644     7896      `
+/2666           0           0     0     644     10248     `
+/2714           0           0     0     644     6752      `
+/2754           0           0     0     644     3832      `
+/2812           0           0     0     644     28544     `
+/2852           0           0     0     644     32616     `
+/2892           0           0     0     644     4776      `
+/2937           0           0     0     644     13992     `
+/2979           0           0     0     644     44328     `
+/3009           0           0     0     644     8824      `
+/3049           0           0     0     644     28280     `
+/3099           0           0     0     644     3648      `
+/3144           0           0     0     644     3432      `
+/3187           0           0     0     644     10000     `
+/3228           0           0     0     644     1728      `
+/3289           0           0     0     644     8992      `
+/3323           0           0     0     644     14920     `
+/3360           0           0     0     644     3104      `
+/3394           0           0     0     644     58232     `
+/3431           0           0     0     644     2216      `
+/3476           0           0     0     644     18040     `
+/3510           0           0     0     644     33576     `
+/3548           0           0     0     644     51600     `
+/3588           0           0     0     644     17496     `
+/3634           0           0     0     644     5216      `
+/3686           0           0     0     644     11440     `
+/3739           0           0     0     644     14760     `
+/3801           0           0     0     644     1560      `
+/3831           0           0     0     644     4024      `
+/3878           0           0     0     644     3792      `
+/3920           0           0     0     644     23600     `
+/3969           0           0     0     644     8240      `
+/4027           0           0     0     644     5168      `
+/4065           0           0     0     644     21592     `
+/4109           0           0     0     644     7328      `
+/4146           0           0     0     644     16024     `
+/4176           0           0     0     644     13200     `
+/4214           0           0     0     644     12800     `
+/4263           0           0     0     644     7648      `

@@ -1,0 +1,1 @@
+cmd_drivers/soc/rockchip/fiq_debugger/built-in.a := rm -f drivers/soc/rockchip/fiq_debugger/built-in.a;  printf "drivers/soc/rockchip/fiq_debugger/%s " fiq_debugger.o rk_fiq_debugger.o | xargs llvm-ar cDPrST drivers/soc/rockchip/fiq_debugger/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/devfreq/built-in.a := rm -f drivers/devfreq/built-in.a;  printf "drivers/devfreq/%s " devfreq.o devfreq-event.o governor_simpleondemand.o governor_performance.o governor_powersave.o governor_userspace.o rockchip_bus.o rockchip_dmc.o rockchip_dmc_common.o event/built-in.a | xargs llvm-ar cDPrST drivers/devfreq/built-in.a

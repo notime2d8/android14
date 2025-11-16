@@ -1,0 +1,1 @@
+cmd_drivers/media/i2c/built-in.a := rm -f drivers/media/i2c/built-in.a;  printf "drivers/media/i2c/%s " gc8034.o lt6911uxc.o lt6911uxe.o lt7911d.o otp_eeprom.o rk628/built-in.a rk_ircut.o tc35874x.o | xargs llvm-ar cDPrST drivers/media/i2c/built-in.a

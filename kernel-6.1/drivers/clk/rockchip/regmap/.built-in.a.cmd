@@ -1,0 +1,1 @@
+cmd_drivers/clk/rockchip/regmap/built-in.a := rm -f drivers/clk/rockchip/regmap/built-in.a;  printf "drivers/clk/rockchip/regmap/%s " clk-regmap-mux.o clk-regmap-divider.o clk-regmap-gate.o clk-regmap-fractional-divider.o clk-regmap-composite.o clk-regmap-pll.o clk-rk618.o | xargs llvm-ar cDPrST drivers/clk/rockchip/regmap/built-in.a

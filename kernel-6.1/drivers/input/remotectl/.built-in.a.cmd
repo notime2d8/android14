@@ -1,0 +1,1 @@
+cmd_drivers/input/remotectl/built-in.a := rm -f drivers/input/remotectl/built-in.a;  printf "drivers/input/remotectl/%s " rockchip_pwm_remotectl.o | xargs llvm-ar cDPrST drivers/input/remotectl/built-in.a

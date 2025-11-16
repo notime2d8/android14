@@ -1,0 +1,1 @@
+cmd_vmlinux.a := rm -f vmlinux.a; llvm-ar cDPrST vmlinux.a ./built-in.a  arch/arm64/lib/lib.a  lib/lib.a; llvm-ar mPiT $$(llvm-ar t vmlinux.a | sed -n 1p) vmlinux.a $$(llvm-ar t vmlinux.a | grep -F -f ./scripts/head-object-list.txt)

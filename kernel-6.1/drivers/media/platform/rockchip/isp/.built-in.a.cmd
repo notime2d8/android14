@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/rockchip/isp/built-in.a := rm -f drivers/media/platform/rockchip/isp/built-in.a;  printf "drivers/media/platform/rockchip/isp/%s " hw.o dev.o rkisp.o regs.o common.o isp_stats.o isp_params.o capture.o dmarx.o csi.o procfs.o isp_stats_v21.o isp_params_v21.o capture_v21.o isp_dvbm.o | xargs llvm-ar cDPrST drivers/media/platform/rockchip/isp/built-in.a

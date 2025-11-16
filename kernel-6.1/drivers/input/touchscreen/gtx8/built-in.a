@@ -1,0 +1,12 @@
+!<thin>
+//                                              94        `
+goodix_ts_i2c.o/
+goodix_ts_core.o/
+goodix_cfg_bin.o/
+goodix_gtx8_update.o/
+goodix_ts_tools.o/
+/0              0           0     0     644     56408     `
+/17             0           0     0     644     58680     `
+/35             0           0     0     644     19144     `
+/53             0           0     0     644     40896     `
+/75             0           0     0     644     45560     `

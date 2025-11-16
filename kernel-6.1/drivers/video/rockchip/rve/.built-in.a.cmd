@@ -1,0 +1,1 @@
+cmd_drivers/video/rockchip/rve/built-in.a := rm -f drivers/video/rockchip/rve/built-in.a;  printf "drivers/video/rockchip/rve/%s " rve_drv.o rve_job.o rve_reg.o rve_fence.o | xargs llvm-ar cDPrST drivers/video/rockchip/rve/built-in.a

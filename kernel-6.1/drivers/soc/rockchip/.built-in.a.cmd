@@ -1,0 +1,1 @@
+cmd_drivers/soc/rockchip/built-in.a := rm -f drivers/soc/rockchip/built-in.a;  printf "drivers/soc/rockchip/%s " grf.o io-domain.o pm_domains.o fiq_debugger/built-in.a rockchip_ipa.o rockchip_opp_select.o rockchip_pvtm.o rockchip_pm_config.o rockchip_system_monitor.o rk_dmabuf_procfs.o | xargs llvm-ar cDPrST drivers/soc/rockchip/built-in.a

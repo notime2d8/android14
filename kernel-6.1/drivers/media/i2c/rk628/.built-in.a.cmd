@@ -1,0 +1,1 @@
+cmd_drivers/media/i2c/rk628/built-in.a := rm -f drivers/media/i2c/rk628/built-in.a;  printf "drivers/media/i2c/rk628/%s " rk628.o rk628_cru.o rk628_hdmirx.o rk628_dsi.o rk628_combrxphy.o rk628_combtxphy.o rk628_mipi_dphy.o rk628_post_process.o rk628_csi_v4l2.o rk628_bt1120_v4l2.o | xargs llvm-ar cDPrST drivers/media/i2c/rk628/built-in.a

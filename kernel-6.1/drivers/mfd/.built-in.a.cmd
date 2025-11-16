@@ -1,0 +1,1 @@
+cmd_drivers/mfd/built-in.a := rm -f drivers/mfd/built-in.a;  printf "drivers/mfd/%s " mfd-core.o tps6586x.o rk806-core.o rk806-spi.o rk808.o rkx110_x120/built-in.a syscon.o | xargs llvm-ar cDPrST drivers/mfd/built-in.a

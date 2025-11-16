@@ -1,0 +1,1 @@
+cmd_drivers/watchdog/built-in.a := rm -f drivers/watchdog/built-in.a;  printf "drivers/watchdog/%s " watchdog_core.o watchdog_dev.o dw_wdt.o | xargs llvm-ar cDPrST drivers/watchdog/built-in.a

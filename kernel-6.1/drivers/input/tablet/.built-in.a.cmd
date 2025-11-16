@@ -1,0 +1,1 @@
+cmd_drivers/input/tablet/built-in.a := rm -f drivers/input/tablet/built-in.a;  printf "drivers/input/tablet/%s " acecad.o aiptek.o hanwang.o kbtab.o | xargs llvm-ar cDPrST drivers/input/tablet/built-in.a

@@ -1,0 +1,1 @@
+cmd_drivers/usb/typec/tcpm/built-in.a := rm -f drivers/usb/typec/tcpm/built-in.a;  printf "drivers/usb/typec/tcpm/%s " tcpm.o fusb302.o tcpci.o tcpci_husb311.o | xargs llvm-ar cDPrST drivers/usb/typec/tcpm/built-in.a

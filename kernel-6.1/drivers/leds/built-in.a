@@ -1,0 +1,28 @@
+!<thin>
+//                                              278       `
+led-core.o/
+led-class.o/
+led-class-flash.o/
+led-triggers.o/
+leds-gpio.o/
+leds-is31fl32xx.o/
+trigger/ledtrig-timer.o/
+trigger/ledtrig-oneshot.o/
+trigger/ledtrig-heartbeat.o/
+trigger/ledtrig-gpio.o/
+trigger/ledtrig-cpu.o/
+trigger/ledtrig-activity.o/
+trigger/ledtrig-default-on.o/
+/0              0           0     0     644     22648     `
+/12             0           0     0     644     19096     `
+/25             0           0     0     644     16864     `
+/44             0           0     0     644     20352     `
+/60             0           0     0     644     8424      `
+/73             0           0     0     644     10256     `
+/92             0           0     0     644     6272      `
+/117            0           0     0     644     7400      `
+/144            0           0     0     644     8320      `
+/173            0           0     0     644     8360      `
+/197            0           0     0     644     6800      `
+/220            0           0     0     644     8904      `
+/248            0           0     0     644     3792      `

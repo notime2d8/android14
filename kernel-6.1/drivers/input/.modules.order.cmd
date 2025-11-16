@@ -1,0 +1,1 @@
+cmd_drivers/input/modules.order := {   cat drivers/input/keyboard/modules.order;   cat drivers/input/joystick/modules.order;   cat drivers/input/remotectl/modules.order;   cat drivers/input/sensors/modules.order;   cat drivers/input/misc/modules.order; :; } > drivers/input/modules.order

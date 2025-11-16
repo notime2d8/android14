@@ -1,0 +1,1 @@
+cmd_net/ipv6/netfilter/built-in.a := rm -f net/ipv6/netfilter/built-in.a;  printf "net/ipv6/netfilter/%s " ip6_tables.o ip6table_filter.o ip6table_mangle.o ip6table_raw.o nf_defrag_ipv6_hooks.o nf_conntrack_reasm.o nf_socket_ipv6.o nf_tproxy_ipv6.o nf_reject_ipv6.o ip6t_rpfilter.o ip6t_REJECT.o | xargs llvm-ar cDPrST net/ipv6/netfilter/built-in.a

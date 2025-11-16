@@ -1,0 +1,25 @@
+!<thin>
+//                                              320       `
+rockchip/grf.o/
+rockchip/io-domain.o/
+rockchip/pm_domains.o/
+rockchip/fiq_debugger/fiq_debugger.o/
+rockchip/fiq_debugger/rk_fiq_debugger.o/
+rockchip/rockchip_ipa.o/
+rockchip/rockchip_opp_select.o/
+rockchip/rockchip_pvtm.o/
+rockchip/rockchip_pm_config.o/
+rockchip/rockchip_system_monitor.o/
+rockchip/rk_dmabuf_procfs.o/
+
+/0              0           0     0     644     11760     `
+/16             0           0     0     644     9520      `
+/38             0           0     0     644     39608     `
+/61             0           0     0     644     45448     `
+/99             0           0     0     644     17528     `
+/140            0           0     0     644     6256      `
+/165            0           0     0     644     61856     `
+/197            0           0     0     644     15616     `
+/223            0           0     0     644     23416     `
+/254            0           0     0     644     54080     `
+/290            0           0     0     644     11216     `

@@ -1,0 +1,1 @@
+cmd_drivers/media/mc/built-in.a := rm -f drivers/media/mc/built-in.a;  printf "drivers/media/mc/%s " mc-device.o mc-devnode.o mc-entity.o mc-request.o mc-dev-allocator.o | xargs llvm-ar cDPrST drivers/media/mc/built-in.a

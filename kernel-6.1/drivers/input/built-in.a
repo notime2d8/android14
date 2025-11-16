@@ -1,0 +1,49 @@
+!<thin>
+//                                              438       `
+input.o/
+input-compat.o/
+input-mt.o/
+input-poller.o/
+ff-core.o/
+touchscreen.o/
+ff-memless.o/
+input-polldev.o/
+input-leds.o/
+joydev.o/
+evdev.o/
+keyboard/adc-keys.o/
+keyboard/gpio_keys.o/
+keyboard/gpio_keys_polled.o/
+joystick/xpad.o/
+joystick/rocknix-singleadc-joypad.o/
+joystick/odroid-gou-joypad.o/
+remotectl/rockchip_pwm_remotectl.o/
+sensors/hall/mh248.o/
+sensors/sensor-i2c.o/
+sensors/sensor-dev.o/
+misc/rk805-pwrkey.o/
+misc/uinput.o/
+
+/0              0           0     0     644     71256     `
+/9              0           0     0     644     19152     `
+/25             0           0     0     644     11560     `
+/37             0           0     0     644     9096      `
+/53             0           0     0     644     7976      `
+/64             0           0     0     644     6720      `
+/79             0           0     0     644     9920      `
+/93             0           0     0     644     11888     `
+/110            0           0     0     644     7496      `
+/124            0           0     0     644     80672     `
+/134            0           0     0     644     79696     `
+/143            0           0     0     644     8224      `
+/164            0           0     0     644     21864     `
+/186            0           0     0     644     11360     `
+/215            0           0     0     644     47640     `
+/232            0           0     0     644     30792     `
+/269            0           0     0     644     22256     `
+/299            0           0     0     644     30632     `
+/335            0           0     0     644     8520      `
+/357            0           0     0     644     8856      `
+/379            0           0     0     644     103352    `
+/401            0           0     0     644     6288      `
+/422            0           0     0     644     52360     `

@@ -1,0 +1,1 @@
+cmd_drivers/net/ppp/built-in.a := rm -f drivers/net/ppp/built-in.a;  printf "drivers/net/ppp/%s " ppp_generic.o ppp_async.o bsd_comp.o ppp_deflate.o ppp_mppe.o ppp_synctty.o pppox.o pppoe.o pptp.o | xargs llvm-ar cDPrST drivers/net/ppp/built-in.a

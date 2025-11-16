@@ -1,0 +1,1 @@
+cmd_drivers/power/reset/built-in.a := rm -f drivers/power/reset/built-in.a;  printf "drivers/power/reset/%s " gpio-poweroff.o gpio-restart.o reboot-mode.o syscon-reboot-mode.o | xargs llvm-ar cDPrST drivers/power/reset/built-in.a

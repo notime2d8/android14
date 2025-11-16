@@ -1,0 +1,19 @@
+!<thin>
+//                                              238       `
+videobuf2/videobuf2-core.o/
+videobuf2/frame_vector.o/
+videobuf2/videobuf2-cma-sg.o/
+videobuf2/videobuf2-dma-contig.o/
+videobuf2/videobuf2-dma-sg.o/
+videobuf2/videobuf2-memops.o/
+videobuf2/videobuf2-v4l2.o/
+videobuf2/videobuf2-vmalloc.o/
+
+/0              0           0     0     644     78080     `
+/28             0           0     0     644     6976      `
+/54             0           0     0     644     16992     `
+/84             0           0     0     644     18264     `
+/118            0           0     0     644     17904     `
+/148            0           0     0     644     5056      `
+/178            0           0     0     644     45720     `
+/206            0           0     0     644     11760     `

@@ -1,0 +1,1 @@
+cmd_drivers/misc/built-in.a := rm -f drivers/misc/built-in.a;  printf "drivers/misc/%s " rk628/built-in.a rockchip/built-in.a eeprom/built-in.a cb710/built-in.a ti-st/built-in.a lis3lv02d/built-in.a sram.o cardreader/built-in.a uid_sys_stats.o | xargs llvm-ar cDPrST drivers/misc/built-in.a

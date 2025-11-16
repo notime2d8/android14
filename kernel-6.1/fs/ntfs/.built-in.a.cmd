@@ -1,0 +1,1 @@
+cmd_fs/ntfs/built-in.a := rm -f fs/ntfs/built-in.a;  printf "fs/ntfs/%s " aops.o attrib.o collate.o compress.o debug.o dir.o file.o index.o inode.o mft.o mst.o namei.o runlist.o super.o sysctl.o unistr.o upcase.o | xargs llvm-ar cDPrST fs/ntfs/built-in.a

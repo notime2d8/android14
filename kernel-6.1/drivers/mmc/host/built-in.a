@@ -1,0 +1,21 @@
+!<thin>
+//                                              134       `
+sdhci.o/
+dw_mmc.o/
+dw_mmc-pltfm.o/
+dw_mmc-rockchip.o/
+sdhci-pltfm.o/
+sdhci-of-arasan.o/
+sdhci-of-dwcmshc.o/
+cqhci-core.o/
+mmc_hsq.o/
+
+/0              0           0     0     644     101080    `
+/9              0           0     0     644     68240     `
+/19             0           0     0     644     8304      `
+/35             0           0     0     644     16296     `
+/54             0           0     0     644     14128     `
+/69             0           0     0     644     31856     `
+/88             0           0     0     644     25696     `
+/108            0           0     0     644     31600     `
+/122            0           0     0     644     9816      `

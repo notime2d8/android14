@@ -1,0 +1,21 @@
+
+BOARD_CONNECTIVITY_VENDOR := Rockchip
+
+ifeq ($(strip $(BOARD_CONNECTIVITY_VENDOR)), Rockchip)
+BOARD_WLAN_DEVICE := auto
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_auto
+BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_auto
+PRODUCT_CFI_INCLUDE_PATHS   += hardware/rockchip/wifi/wpa_supplicant_8_lib
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+WPA_SUPPLICANT_VERSION      := VER_0_8_X
+BOARD_HOSTAPD_DRIVER        := NL80211
+WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
+WIFI_DRIVER_FW_PATH_STA     := "/vendor/etc/firmware/fw_bcm4329.bin"
+WIFI_DRIVER_FW_PATH_P2P     := "/vendor/etc/firmware/fw_bcm4329_p2p.bin"
+WIFI_DRIVER_FW_PATH_AP      := "/vendor/etc/firmware/fw_bcm4329_apsta.bin"
+BOARD_HAVE_BLUETOOTH := true
+#BOARD_HAVE_BLUETOOTH_BCM := true
+#BOARD_HAVE_BLUETOOTH_RTK := true
+#BOARD_HAVE_BLUETOOTH_AIC := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/rockchip/$(TARGET_BOARD_PLATFORM)/bluetooth
+endif

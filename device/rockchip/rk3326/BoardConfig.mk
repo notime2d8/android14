@@ -1,0 +1,136 @@
+#
+# Copyright (c) 2020 Rockchip Electronics Co., Ltd
+#
+
+CURRENT_SDK_VERSION := RK3326_ANDROID14.0_MID_V1.0
+
+# RK3326/PX30 freezes on Android 14 + Linux 6.1, here set to 34 U,
+# From now on, this property should never be changed.
+BOARD_SHIPPING_API_LEVEL := 34
+
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := cortex-a53
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
+
+PRODUCT_UBOOT_CONFIG ?= rk3326
+PRODUCT_KERNEL_ARCH ?= arm64
+PRODUCT_KERNEL_DTS ?= rk3326-863-lp3-v10-rkisp1
+PRODUCT_KERNEL_CONFIG ?= rk3326.config
+#BOARD_AVB_ENABLE := true
+# used for fstab_generator, sdmmc controller address
+PRODUCT_BOOT_DEVICE ?= ff390000.dwmmc,ff3b0000.nandc,ff390000.mmc
+PRODUCT_SDMMC_DEVICE ?= ff380000.dwmmc
+
+SF_PRIMARY_DISPLAY_ORIENTATION ?= 0
+
+# Disable emulator for "make dist" until there is a 64-bit qemu kernel
+BUILD_EMULATOR := false
+TARGET_BOARD_PLATFORM := rk3326
+TARGET_BOARD_PLATFORM_GPU := mali-tDVx
+TARGET_RK_GRALLOC_AIDL := true
+TARGET_RK_GRALLOC_VERSION := 4
+BOARD_USE_DRM := true
+
+# Use otg
+#ROCKCHIP_USB_OTG := true
+
+# Use Vulkan Skia
+TARGET_USES_VULKAN := true
+
+# RenderScript
+# OVERRIDE_RS_DRIVER := libnvRSDriver.so
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53
+BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a53
+# DISABLE_RS_64_BIT_DRIVER := true
+
+TARGET_USES_64_BIT_BCMDHD := true
+TARGET_USES_64_BIT_BINDER := true
+
+PRODUCT_KERNEL_VERSION := 6.1
+
+# HACK: Build apps as 64b for volantis_64_only
+ifneq (,$(filter ro.zygote=zygote64, $(PRODUCT_DEFAULT_PROPERTY_OVERRIDES)))
+TARGET_PREFER_32_BIT_APPS :=
+TARGET_SUPPORTS_64_BIT_APPS := true
+endif
+
+# Sensors
+BOARD_SENSOR_ST ?= false
+BOARD_SENSOR_MPU_VR := false
+BOARD_SENSOR_MPU_PAD := false
+
+BOARD_USES_GENERIC_INVENSENSE := false
+
+TARGET_BOARD_PLATFORM_PRODUCT ?= tablet
+
+ENABLE_CPUSETS := true
+
+# Enable Dex compile opt as default
+WITH_DEXPREOPT := true
+
+BOARD_NFC_SUPPORT := false
+BOARD_HAS_GPS := false
+
+BOARD_GRAVITY_SENSOR_SUPPORT ?= false
+BOARD_COMPASS_SENSOR_SUPPORT := false
+BOARD_GYROSCOPE_SENSOR_SUPPORT ?= false
+BOARD_PROXIMITY_SENSOR_SUPPORT := false
+BOARD_LIGHT_SENSOR_SUPPORT := false
+BOARD_PRESSURE_SENSOR_SUPPORT := false
+BOARD_TEMPERATURE_SENSOR_SUPPORT := false
+BOARD_USB_HOST_SUPPORT := true
+
+BOARD_USE_SPARSE_SYSTEM_IMAGE := true
+
+# Google Service and frp overlay
+BUILD_WITH_GOOGLE_MARKET := false
+BUILD_WITH_GOOGLE_MARKET_ALL := false
+BUILD_WITH_GOOGLE_FRP := false
+BUILD_WITH_GOOGLE_GMS_EXPRESS := false
+
+# rknn
+BOARD_RKNN_SUPPORT := false
+
+# Add widevine L3 support
+BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 3
+
+# camera enable
+BOARD_CAMERA_SUPPORT := false
+BOARD_CAMERA_SUPPORT_EXT := false
+ALLOW_MISSING_DEPENDENCIES=true
+
+# Config GO Optimization
+#BUILD_WITH_GO_OPT := true
+
+# enable SVELTE malloc
+MALLOC_SVELTE := true
+
+#Config omx to support codec type.
+BOARD_SUPPORT_VP9 := true
+BOARD_SUPPORT_VP6 := false
+BOARD_SUPPORT_HEVC_ENC := true
+BOARD_MEMTRACK_SUPPORT := false
+
+# Allow deprecated BUILD_ module types to get DDK building
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_USES_BUILD_HOST_EXECUTABLE := true
+BUILD_BROKEN_USES_BUILD_HOST_SHARED_LIBRARY := true
+BUILD_BROKEN_USES_BUILD_HOST_STATIC_LIBRARY := true
+
+BOARD_SHOW_HDMI_SETTING ?= false
+
+#for optee support
+PRODUCT_HAVE_OPTEE := true
+
+BOARD_BASEPARAMETER_SUPPORT := true
+
+#sta ap
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true

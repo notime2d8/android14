@@ -1,0 +1,103 @@
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+bluetooth.hardware.power.operating_voltage_mv=3300
+bluetooth.profile.a2dp.source.enabled?=true
+bluetooth.profile.asha.central.enabled?=true
+bluetooth.profile.avrcp.target.enabled?=true
+bluetooth.profile.bas.client.enabled?=true
+bluetooth.profile.ccp.server.enabled?=true
+bluetooth.profile.gatt.enabled?=true
+bluetooth.profile.hfp.ag.enabled?=true
+bluetooth.profile.hid.device.enabled?=true
+bluetooth.profile.hid.host.enabled?=true
+bluetooth.profile.vcp.controller.enabled?=true
+persist.bluetooth.a2dp_aac.vbr_supported=true
+bluetooth.profile.mcp.server.enabled?=true
+bluetooth.profile.hap.client.enabled?=true
+bluetooth.profile.csip.set_coordinator.enabled?=true
+bluetooth.profile.bap.broadcast.assist.enabled?=true
+bluetooth.profile.bap.unicast.client.enabled?=true
+bluetooth.profile.tbs.server.enabled?=false
+bluetooth.profile.vc.server.enabled?=false
+  
+
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+ro.bluetooth.a2dp_offload.supported=false
+
+persist.debug.ftrace_events_disable=Yes
+
+# Zygote
+zygote.critical_window.minute=10
+
+# OEM Unlock
+ro.oem_unlock_supported=1
+
+ro.config.media_vol_default=13
+ro.config.media_vol_steps=20
+
+# LMK
+ro.lmk.swap_util_max=100
+ro.lmk.swap_free_low_percentage=8
+ro.lmk.use_new_strategy=true
+
+dalvik.vm.madvise-random=true
+persist.traced.enable=false
+ro.statsd.enable=false
+ro.llk.enable=false
+
+# SurfaceFlinger
+ro.surface_flinger.clear_slots_with_set_layer_buffer=true
+ro.surface_flinger.uclamp.min=130
+
+# Zram
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
+
+# Zygote
+zygote.critical_window.minute=10
+
+#check
+ro.surface_flinger.vsync_event_phase_offset_ns=1000000
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=1000000
+ro.surface_flinger.use_context_priority=true
+ro.surface_flinger.present_time_offset_from_vsync_ns=0
+ro.surface_flinger.running_without_sync_framework=false
+
+# Disable Prime Shader Cache in SurfaceFlinger to make it available faster
+service.sf.prime_shader_cache=0
+# Enable GPU acceleration of UI VS CPU
+debug.sf.hw=1
+debug.sf.predict_hwc_composition_strategy=0
+# Enable HWC for virtual displays for Wireless Display (WFD)
+debug.sf.enable_hwc_vds=1
+debug.sf.enable_transaction_tracing=false
+
+debug.sf.enable_gl_backpressure=0
+# Disables client composition cache and causes jank.
+#debug.sf.disable_client_composition_cache=1
+
+ro.surface_flinger.use_vr_flinger=false
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.use_color_management=true
+
+# WFD
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=0
+
+ro.config.enable.remotecontrol=false   # Disable remote control features
+
+ro.hwui.text_large_cache_height=1024 # Reduce the size of large text cache
+ro.hwui.text_large_cache_width=2048  # Reduce the width of large text cache
+debug.hwui.use_buffer_cache=false    # Disable buffer cache to free memory
+debug.hwui.skia_atrace_enabled=false     # Disable Skia tracing
+debug.hwui.use_partial_updates=true   # Enable partial updates for better performance
+debug.hwui.use_buffer_age=false 	# Mali doesn't expose buffer age
+
+ro.boot.noril=true
+debug.sf.nobootanimation=0
+

@@ -473,10 +473,6 @@ endif
 
 PRODUCT_PACKAGES += libstdc++.vendor
 
-#Build with UiMode Config
-PRODUCT_COPY_FILES += \
-    device/rockchip/common/uimode/package_uimode_config.xml:vendor/etc/package_uimode_config.xml
-
 # Zoom out recovery ui of box by two percent.
 ifneq ($(filter atv box, $(strip $(TARGET_BOARD_PLATFORM_PRODUCT))), )
     TARGET_RECOVERY_OVERSCAN_PERCENT := 2
@@ -515,15 +511,6 @@ else
 endif
 PRODUCT_COPY_FILES += \
     device/rockchip/common/flash_img/flash_img.sh:vendor/bin/flash_img.sh
-
-#read pcie info for Devicetest APK
-PRODUCT_COPY_FILES += \
-    device/rockchip/common/pcie/read_pcie_info.sh:vendor/bin/read_pcie_info.sh
-
-BOARD_TV_LOW_MEMOPT ?= false
-ifeq ($(strip $(BOARD_TV_LOW_MEMOPT)), true)
-    include device/rockchip/common/tv/tv_low_ram_device.mk
-endif
 
 # Camera support
 ifeq ($(BOARD_CAMERA_SUPPORT),true)
